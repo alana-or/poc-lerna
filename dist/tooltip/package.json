@@ -1,5 +1,5 @@
 {
-  "name": "tooltip",
+  "name": "alana-tooltip",
   "version": "0.0.4",
   "peerDependencies": {
     "@angular/common": "^12.2.0",
@@ -15,5 +15,5 @@
   "fesm2015": "fesm2015/tooltip.js",
   "typings": "tooltip.d.ts",
   "sideEffects": false,
-  "gitHead": "871e5e428f7d8fcd2f3b3e34ec6b72104a9172d3"
+  "gitHead": "d6e84ab92e307b0232153f5bd90f96049f2f4685"
 }
