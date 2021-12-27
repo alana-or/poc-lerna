@@ -2,6 +2,9 @@ precisa criar um repositorio
 
 fluxo de modificação de componente:
     fazer uma modificação 
+	atualizar o repo sem o dist
+	rodar ng build componentes para ir para o dist 
+
     criar um commit git ( não dar push )
     lerna version - para add a nova versão do componente 
         lerna atualiza o package.json, add uma tag no github e já sobe para o repositorio 
