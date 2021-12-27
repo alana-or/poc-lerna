@@ -1,0 +1,19 @@
+precisa criar um repositorio
+
+fluxo de modificação de componente:
+    fazer uma modificação 
+	atualizar o repo sem o dist
+	rodar ng build componentes para ir para o dist 
+
+    criar um commit git ( não dar push )
+    lerna version - para add a nova versão do componente 
+        lerna atualiza o package.json, add uma tag no github e já sobe para o repositorio 
+            se olhar no github já vai ter modificado 
+        agora é mandar pro npm 
+            lerna publish from-git 
+                analisa se precisa ou não atualizar o componente e pergunta se quer publicar 
+                nesse passo já está publicado, se alterar o projeto que consome já funciona 
+                
+            
+prós e contras do trabalho 
+vai acabar a sprint e tem que trocar de squade, mas ficou umas coisas de layout pra trás 
