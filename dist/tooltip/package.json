@@ -14,5 +14,6 @@
   "esm2015": "esm2015/tooltip.js",
   "fesm2015": "fesm2015/tooltip.js",
   "typings": "tooltip.d.ts",
-  "sideEffects": false
+  "sideEffects": false,
+  "gitHead": "871e5e428f7d8fcd2f3b3e34ec6b72104a9172d3"
 }
