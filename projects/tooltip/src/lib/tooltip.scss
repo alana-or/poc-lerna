@@ -1,0 +1,128 @@
+$color-neutral-dark-10:#222a33;
+$color-neutral-dark-white:#ffffff;
+
+:host{
+  position: relative;
+
+  &:hover, &:active{
+    .tooltip{
+      opacity: 1;
+    }
+  }
+
+  .tooltip{
+    position: absolute;
+    background-color: $color-neutral-dark-10;
+    max-width: 240px;
+    border-radius: 4px;
+    padding: 8px;
+    width: max-content;
+    text-align: left;
+    color:$color-neutral-dark-white;
+    font-size: 14px;
+    opacity: 0;
+
+    &:before{
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      z-index: -1;
+      background: $color-neutral-dark-10;
+      transform: rotate(45deg);
+    }
+
+    &.right{
+      top: 50%;
+      transform: translate(calc(100% + 10px),-50%);
+      right: 0;
+
+      &:before{
+        left: -5px;
+        top: 50%;
+        transform: translatey(-50%) rotate(45deg);
+      }
+    }
+
+    &.left{
+      top: 50%;
+      transform: translate(calc(-100% - 10px),-50%);
+      left: 0;
+
+      &:before{
+        right: -5px;
+        top: 50%;
+        transform: translatey(-50%) rotate(45deg);
+      }
+    }
+
+    &.top{
+      left: 50%;
+      top: 0;
+      transform: translate(-50%,calc(-100% - 10px));
+      right: 50%;
+
+      &:before{
+        bottom: -5px;
+        transform: translatex(-50%) rotate(45deg);
+        left: 50%;
+      }
+    }
+
+    &.top-right{
+      top: 0;
+      transform: translate(0, calc(-100% - 10px));
+      left: 0;
+
+      &:before{
+        bottom: -5px;
+        left: 5px;
+      }
+    }
+
+    &.top-left{
+      top: 0;
+      transform: translate(0, calc(-100% - 10px));
+      right: 0;
+
+      &:before{
+        bottom: -5px;
+        right: 5px;
+      }
+    }
+
+    &.bottom{
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, calc(100% + 10px));
+      right: 50%;
+
+      &:before{
+        top: -5px;
+        transform: translatex(-50%) rotate(45deg);
+        left: 50%;
+      }
+    }
+
+    &.bottom-right{
+      bottom: 0;
+      transform: translate(0, calc(100% + 10px));
+      left: 0;
+
+      &:before{
+        top: -5px;
+      }
+    }
+
+    &.bottom-left{
+      bottom: 0;
+      transform: translate(0, calc(100% + 10px));
+      right: 0;
+
+      &:before{
+        right: 5px;
+        top: -5px;
+      }
+    }
+  }
+}
